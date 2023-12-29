@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Afacad", sans-serif;
+}
+
+.container {
+  background-image: url("jm84t0fmtt3fabtx1rx6.jpeg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-box {
+  width: 700px;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.todo-logo {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+#todo-input {
+  background-color: hsl(235, 24%, 19%);
+  color: grey;
+  font-size: 25px;
+  height: 60px;
+  padding: 30px;
+  border-radius: 5px;
+  border: none;
+}
+#todo-list-box {
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+#todo-list-box p {
+  color: rgb(190, 188, 188);
+  font-size: 25px;
+  border-bottom: 3px solid grey;
+}
+.todo-list {
+  color: rgb(190, 188, 188);
+  font-size: 25px;
+  min-height: 60px;
+  padding: 22px;
+  border-bottom: 1px solid rgb(146, 144, 144);
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#delete-todo {
+  position: relative;
+  cursor: pointer;
+  right: 20px;
+  padding: 10px;
+}
+
+.toggle-list {
+  text-decoration: line-through;
+}
+
+@media (min-width: 560px) and (max-width: 700px) {
+  .todo-box {
+    width: 80%;
+    margin: auto;
+  }
+  #todo-list-box {
+    padding: 10px;
+  }
+  .todo-list {
+    padding: 20px;
+  }
+  #delete-todo {
+    right: 2px;
+    padding: 5px;
+  }
+}
+@media (max-width: 559px) {
+  .todo-box {
+    width: 96%;
+    margin: auto;
+  }
+  #todo-list-box {
+    padding: 5px;
+  }
+  .todo-list {
+    padding: 20px;
+    font-size: 20px;
+  }
+  #todo-list-box p {
+    font-size: 20px;
+  }
+  #todo-input {
+    font-size: 20px;
+  }
+  #delete-todo {
+    right: 2px;
+    padding: 10px;
+  }
+}
